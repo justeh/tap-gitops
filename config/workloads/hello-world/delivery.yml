@@ -5,7 +5,6 @@ metadata:
   annotations:
     ootb.apps.tanzu.vmware.com/servicebinding-workload: "true"
     ootb.apps.tanzu.vmware.com/apidescriptor-ref: "true"
-    kapp.k14s.io/update-strategy: always-replace
   labels:
     app.kubernetes.io/part-of: hello-world
     apps.tanzu.vmware.com/workload-type: web
@@ -29,6 +28,7 @@ spec:
           appliveview-sample/app-live-view-appflavours-boot
           appliveview-sample/app-live-view-systemproperties
         developer.conventions/target-containers: workload
+        kapp.k14s.io/update-strategy: always-replace
       labels:
         app.kubernetes.io/component: run
         app.kubernetes.io/part-of: hello-world
