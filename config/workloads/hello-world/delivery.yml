@@ -46,7 +46,7 @@ spec:
           value: World
         - name: JAVA_TOOL_OPTIONS
           value: -Dmanagement.endpoint.health.probes.add-additional-paths="true" -Dmanagement.endpoint.health.show-details=always -Dmanagement.endpoints.web.base-path="/actuator" -Dmanagement.endpoints.web.exposure.include=* -Dmanagement.health.probes.enabled="true" -Dmanagement.server.port="8081" -Dserver.port="8080" -Dserver.shutdown.grace-period="24s"
-        image: gcr.io/anz-tap-playground/supply-chain/hello-world-workloads@sha256:1fec67c97dc1c3766ca9ac083cb1d776a21d39b12fbc4edf058d7b05787a2ab0
+        image: gcr.io/anz-tap-playground/supply-chain/hello-world-workloads@sha256:88e5ffa8bd18e20e92a1508f183fd9e3b91b0552f7738b9958c900eac53c7eb7
         livenessProbe:
           httpGet:
             path: /livez
